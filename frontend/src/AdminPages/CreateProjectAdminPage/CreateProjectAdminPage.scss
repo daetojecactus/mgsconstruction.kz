@@ -1,0 +1,325 @@
+.create-project {
+  padding: 80px 0;
+  background-color: #0000003d;
+
+  &__title-main {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: var(--color-descr-secondary);
+    border: 1px solid var(--color-input-border);
+    border-radius: 10px;
+    outline: none;
+  }
+
+  &__input-textarea {
+    font-size: 20px;
+    line-height: 25px;
+    min-height: 200px;
+    resize: none;
+  }
+
+  &__label {
+    // margin-bottom: 10px;
+    font-size: 19px;
+    color: var(--color-header-fc);
+  }
+
+  &__card-delwrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__btn--delcard {
+    padding: 10px;
+    color: var(--color-header-fc);
+    background-color: var(--color-btn);
+    border-radius: 15px;
+  }
+
+  &__form {
+    padding: 25px;
+    background-color: var(--color-contacts-bg);
+    border-radius: 10px;
+  }
+
+  &__main {
+    padding: 25px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    border: 2px solid var(--color-admin-card-bg);
+    border-radius: 10px;
+  }
+
+  &__info {
+    padding: 25px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    border: 2px solid var(--color-admin-card-bg);
+    border-radius: 10px;
+  }
+
+  &__card {
+    padding: 25px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    border: 2px solid var(--color-admin-card-bg);
+    border-radius: 10px;
+  }
+
+  &__info-title, &__card-title {
+    margin: 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-admin-card-bg);
+  }
+
+  &__info-name {
+    margin-bottom: 30px;
+  }
+
+  &__btn--addinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px !important;
+    height: 60px;
+    background-color: var(--color-btn) !important;
+  }
+
+   &__btn--addcard {
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px !important;
+    height: 60px;
+    background-color: var(--color-btn) !important;
+   }
+
+   &__wrapper-mainbtn {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+
+  &__btn--delinfo {
+    background-color: var(--color-delete) !important;
+  }
+
+  &__btn--delcard {
+    background-color: var(--color-delete) !important;
+  }
+
+  &__btn--mainbtn {
+    max-width: 300px !important;
+    height: 70px !important;
+    font-size: 25px !important;
+    background-color: var(--color-add-project) !important;
+  }
+
+  &__main-title {
+    margin: 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--color-admin-card-bg);
+  }
+
+  &__btn {
+    padding: 17px !important;
+    margin: 0;
+    width: 100%;
+    max-width: 130px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    color: var(--color-header-fc);
+    // background-color: var(--color-btn) !important;
+    border-radius: 10px;
+  }
+
+  &__wrapper-info, &__wrapper-card {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-admin-card-bg);
+  }
+
+  &__main-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__main-stage {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  &__main-descr {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__page-image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card--content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 30px;
+  }
+
+  &__card--list {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-btn);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.07);
+  }
+
+  &__show-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__show-button {
+    padding: 17px !important;
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    color: var(--color-header-fc);
+    background-color: var(--color-btn) !important;
+    border-radius: 10px;
+  }
+}
+
+.create-project__wrapper--image {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.create-project__input--icon {
+  margin-right: 10px;
+}
+
+.create-project__label--image {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 380px;
+  height: 50px;
+  font-size: 17px;
+  color: var(--color-admin-card-bg);
+  background-color: var(--color-btn);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.create-project__label--image:hover {
+  background-color: #2980b9;
+}
+
+.create-project__input--image {
+  display: none;
+}
+
+.create-project__text--image {
+  display: inline-block;
+}
+
+.create-project__input--image + .create-project__text--image:before {
+  content: "Выберите фотографию";
+  margin-right: 10px;
+}
+
+/* Опционально: стилизация для отображения выбранного файла */
+.create-project__input--image:valid + .create-project__text--image:before {
+  content: "Выбран файл: " attr(data-file-name);
+  margin-right: 10px;
+}
+
+/* Если вы хотите отобразить выбранное изображение, вы можете добавить следующий стиль */
+.create-project__input--image + .create-project__text--image:after {
+  content: "";
+  display: block;
+  width: 100px; /* Установите желаемую ширину для отображения выбранного изображения */
+  height: 100px; /* Установите желаемую высоту для отображения выбранного изображения */
+  margin-top: 10px;
+  border: 2px solid #3498db; /* Цвет границы выбранного изображения */
+  background-size: cover;
+}
+
+.css-b62m3t-container {
+  height: 50px !important;
+}

@@ -1,0 +1,126 @@
+.contacts-map {
+  padding: 50px 0 80px 0;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+
+  &__contacts {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__map {
+    grid-column-start: 3;
+    grid-column-end: 6;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--color-projects-fc);
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__caption {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    color: var(--color-contacts-list);
+  }
+
+  &__link {
+    margin: 0;
+    position: relative;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    color: var(--color-contacts-list);
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7px;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  &__link:hover::after {
+    background-color: var( --color-fc);
+  }
+
+  &__link:focus::after {
+    background-color: var( --color-fc);
+  }
+
+  &__link:active::after {
+    background-color: var( --color-fc);
+  }
+
+  &__link--phone {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  &__map .map__container {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacts-map {
+    padding-bottom: 50px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 33px;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+
+    &__caption {
+      font-size: 20px;
+    }
+  }
+
+  .contacts-map__map .map__container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts-map {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
+
+    &__caption {
+      font-size: 18px;
+    }
+  }
+}

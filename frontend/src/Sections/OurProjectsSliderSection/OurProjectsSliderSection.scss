@@ -1,0 +1,257 @@
+.our-slider {
+  padding: 80px 0;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--color-hero-card-caption);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 600px);
+    gap: 30px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    color: var(--color-hero-card-caption);
+  }
+
+  &__info {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &__tabs {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  &__tab {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    color: var(--color-hero-card-caption);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__tab.active {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  &__tab:hover {
+    color: var(--color-list-btn-hover);
+  }
+
+  &__tab:active {
+    color: var(--color-hero-card-caption);
+  }
+
+  &__tab:focus {
+    color: var(--color-hero-card-caption);
+  }
+
+  &__projects {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__project {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  &__project.active {
+    display: block;
+    opacity: 1;
+  }
+
+  &__slider {
+    height: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__bg {
+    height: 100%;
+    background: rgba(3, 4, 25, 0.8);
+    border-radius: 10px;
+  }
+
+  &__card {
+    padding: 40px;
+    padding-top: 60px;
+    position: relative;
+    height: 100%;
+  }
+
+  &__wrapper {
+    width: 60%;
+    margin-bottom: 80px;
+  }
+
+  &__btns {
+    margin-bottom: 25px;
+    display: flex;
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.72px;
+    color: var(--color-header-menu-title);
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    color: var(--color-header-menu-title);
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 15px;
+    color: var(--color-header-menu-title) !important;
+    transition: color 0.3s ease-in-out;
+    outline: none;
+  }
+
+  &__btn:hover {
+    color: var(--color-svg-hover) !important;
+  }
+
+  &__btn:focus {
+    color: var(--color-svg-hover) !important;
+  }
+
+  &__btn:active {
+    color: var(--color-svg-hover) !important;
+  }
+
+  &__btn svg {
+    margin-left: 5px;
+    fill: var(--color-header-menu-title);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__btn:hover svg {
+    fill: var(--color-svg-hover);
+  }
+
+  &__btn:focus svg {
+    fill: var(--color-svg-hover);
+  }
+
+  &__btn:active svg {
+    fill: var(--color-svg-hover);
+  }
+
+  &__arrow svg {
+    fill: var(--color-header-menu-title);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__arrow:hover svg {
+    fill: var(--color-svg-hover);
+  }
+
+  &__arrow:active svg {
+    fill: var(--color-svg-hover);
+  }
+
+  &__arrow:focus svg {
+    fill: var(--color-svg-hover);
+  }
+}
+
+@media (max-width: 1200px) {
+  .our-slider {
+    &__text {
+      font-size: 16px;
+    }
+
+    &__tab {
+      font-size: 17px;
+    }
+
+    &__caption {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    &__descr {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .our-slider {
+    padding: 50px 0;
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 600px);
+      gap: 30px;
+    }
+
+    &__info {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__projects {
+      grid-column-start: 1;
+      // grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__card {
+      padding: 30px;
+      padding-top: 40px;
+    }
+
+    &__wrapper {
+      width: 100%;
+    }
+  }
+}

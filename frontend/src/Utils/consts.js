@@ -1,0 +1,14 @@
+export const ADMIN_ROUTE = "/admin";
+export const CREATE_PROJECT_ADMIN_ROUTE = "/admin/create-project";
+export const EDIT_PROJECT_ADMIN_ROUTE = "/admin/edit-project";
+export const CREATE_CATEGORY_ADMIN_ROUTE = "/admin/create-category";
+export const CREATE_SOCIAL_ADMIN_ROUTE = "/admin/create-social";
+export const ALL_PROJECTS_ROUTE = "/admin/all-projects";
+export const LOGIN_ROUTE = "/login";
+export const HOME_ROUTE = "/";
+export const OUR_PROJECT_ROUTE = "/our-projects";
+export const PROJECT_ROUTE = "/project";
+export const SERVICES_ROUTE = "/services";
+export const ABOUT_ROUTE = "/about-us";
+export const CONTACTS_ROUTE = "/contacts";
+export const NOTFOUND_ROUTE = "/*";

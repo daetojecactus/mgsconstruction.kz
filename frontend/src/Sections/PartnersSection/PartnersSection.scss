@@ -1,0 +1,46 @@
+.partners {
+  margin-bottom: 80px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--color-hero-card-caption);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .partners {
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 33px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .partners {
+    &__title {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+}

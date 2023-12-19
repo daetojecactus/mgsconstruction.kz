@@ -1,0 +1,19 @@
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-header-menu-title); // Цвет неактивной точки
+    margin: 0 5px; // Можете настроить отступ между точками по вашему усмотрению
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__dot.active {
+    background-color: var(--color-btn); // Цвет активной точки
+  }
+}

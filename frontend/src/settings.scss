@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-weight: 400;
+  font-family: "GothamPro", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-fc);
+  background-image: url("../public/images/bg-1-image.svg"),
+    url("../public/images/bg-2-image.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left, bottom right;
+  background-size: auto, auto;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: local("GothamProLight"),
+    url("./fonts/GothamProLight.woff2") format("woff2"),
+    url("./fonts/GothamProLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: local("GothamProRegular"),
+    url("./fonts/GothamProRegular.woff2") format("woff2"),
+    url("./fonts/GothamProRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: local("GothamProMedium"),
+    url("./fonts/GothamProMedium.woff2") format("woff2"),
+    url("./fonts/GothamProMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: local("GothamProBold"),
+    url("./fonts/GothamProBold.woff2") format("woff2"),
+    url("./fonts/GothamProBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #fff;
+  --color-header-fc: #fff;
+  --color-hero-card-caption: #030419;
+  --color-header-menu-bg: #030419;
+  --color-header-menu-title: #fff;
+  --color-header-menu-fc: #a4acb1;
+  --color-svg-hover: #a4acb1;
+  --color-list-btn-hover: #777;
+  --color-btn: #007bc2;
+  --color-btn-hover: #005A8D;
+  --color-btn-active: #030419;
+  --color-footer-bg: #030419;
+  --color-projects-fc: #000;
+  --color-contacts-list: #1e1e1e;
+  --color-footer-caption: #fff;
+  --color-footer-fc: #a4acb1;
+  --color-fc: #000;
+  --color-bc: #c7c7c7;
+  --color-btn--secondary: #0360ae;
+  --color-header-bg: #0e1126;
+  --color-input-border: #dadada;
+  --color-input-label: #95a1bb;
+  --color-descr-secondary: #363940;
+  --color-error: #ff5151;
+  --color-grey: #8d8d8d;
+  --color-delete: #a50e0e;
+  --color-contacts-bg: #06071d;
+  --color-admin-card-bg: #fff;
+  --color-add-project: rgb(2, 173, 2);
+
+}
+
+.container {
+  padding: 0 112px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+}

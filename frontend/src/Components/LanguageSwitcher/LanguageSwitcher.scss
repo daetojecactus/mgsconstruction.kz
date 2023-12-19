@@ -1,0 +1,37 @@
+.language-switcher {
+  display: flex;
+
+  &__option:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  &__option:not(:last-child):after {
+    content: " | ";
+    margin: 0 5px;
+  }
+
+  &__option {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    color: var(--color-header-fc);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__option:hover {
+    color: var(--color-svg-hover);
+  }
+
+  &__option:focus {
+    color: var(--color-svg-hover);
+  }
+
+  &__option:active {
+    color: var(--color-svg-hover);
+  }
+
+  &__selected-option {
+    font-weight: bold;
+  }
+}

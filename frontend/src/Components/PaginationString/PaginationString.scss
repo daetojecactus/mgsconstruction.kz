@@ -1,0 +1,23 @@
+.pagination-string {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__bar {
+    width: 100%; // Изменено с height на width
+    height: 2px;
+    display: flex;
+    align-items: center; // Анимация для изменения цвета при наведении
+  }
+
+  &__bar-fill {
+    flex: 1; // Изменено с height на flex
+    height: 100%;
+    background-color: var(--color-header-menu-title);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__bar-fill.active {
+    background-color: var(--color-btn); // Цвет активной точки
+  }
+}

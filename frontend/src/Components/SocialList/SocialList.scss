@@ -1,0 +1,39 @@
+.social-link {
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__icon {
+    transition: filter 0.3s ease-in-out;
+    outline: none;
+  }
+
+  &__icon:hover {
+    filter: contrast(0);
+  }
+
+  &__icon:focus {
+    filter: contrast(0);
+  }
+
+  &__icon:active {
+    filter: contrast(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .social-link {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}

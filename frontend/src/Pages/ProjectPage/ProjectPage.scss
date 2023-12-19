@@ -1,0 +1,372 @@
+.project-intro {
+  position: absolute;
+  width: 100%;
+  height: 660px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-color: rgba(
+    139,
+    139,
+    139,
+    0.5
+  ); /* Прозрачный черный фон поверх изображения */
+  background-blend-mode: hue; /* Режим смешивания - умножение */
+
+  &__content {
+    padding-top: 170px;
+    max-width: 550px;
+  }
+
+  &__caption {
+    margin: 0;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    color: var(--color-hero-card-caption);
+    text-transform: uppercase;
+  }
+
+  &__subcaption {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-hero-card-caption);
+  }
+}
+
+.project-slider {
+  padding-top: 550px;
+
+  &__list {
+    margin-bottom: 15px !important;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 32px;
+    z-index: 2;
+  }
+
+  &__item {
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__tab {
+    padding: 20px 60px !important;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px; /* 138.889% */
+    letter-spacing: 0.36px;
+    color: var(--color-header-fc) !important;
+    background-color: var(--color-btn) !important;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.07);
+    text-align: left;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  &__content {
+    padding: 45px 0;
+  }
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  height: 640px;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.active-tab {
+  display: block;
+}
+
+.swiper {
+  padding: 0 85px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px;
+  height: 80px;
+  color: var(--color-header-fc);
+  background-color: var(--color-btn);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.project-info {
+  &__title {
+    margin: 0;
+    margin-right: 10px;
+    min-width: max-content;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--color-projects-fc);
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    color: var(--color-projects-fc);
+  }
+
+  &__content {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 40px 30px;
+    grid-auto-flow: dense;
+  }
+
+  &__card {
+    display: flex;
+    grid-column: span 1; /* По умолчанию, элементы занимают одну колонку */
+  }
+
+  &__card-desr {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+.project-info__card.large {
+  grid-column: span 2;
+}
+
+.project-show {
+  padding: 80px 0;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    height: 280px;
+  }
+
+  &__slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__hover {
+    padding: 15px;
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: #030419e0;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__hover--title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: var(--color-header-menu-title);
+  }
+
+  &__hover--descr {
+    margin: 0;
+    font-size: 17px;
+    color: var(--color-header-menu-title);
+  }
+}
+
+.project-show__hover.active {
+  opacity: 1;
+}
+
+.project-show .swiper {
+  padding: 0;
+}
+
+.project-show .swiper-button-prev {
+  width: 30px;
+  height: 50px;
+}
+
+.project-show .swiper-button-prev::after {
+font-size: 14px;
+}
+
+.project-show .swiper-button-next {
+  width: 30px;
+  height: 50px;
+}
+
+.project-show .swiper-button-next::after {
+  font-size: 14px;
+  }
+
+
+@media (max-width: 1200px) {
+  .project-intro {
+    height: 550px;
+
+    &__content {
+      padding-top: 140px;
+    }
+
+    &__subcaption {
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    &__caption {
+      font-size: 55px;
+      line-height: 60px;
+    }
+  }
+
+  .project-slider {
+    padding-top: 510px;
+    &__list {
+      gap: 30px;
+    }
+
+    &__item {
+      min-height: 80px;
+    }
+
+    &__tab {
+      padding: 10px 30px !important;
+      font-size: 17px;
+    }
+
+    &__content {
+      padding-top: 30px;
+    }
+  }
+
+  .swiper {
+    padding: 0 75px;
+  }
+
+  .tab-content {
+    height: 500px;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    width: 50px;
+    height: 70px;
+  }
+
+  .project-info {
+    &__content {
+      margin-bottom: 30px;
+      gap: 30px;
+    }
+
+    &__title {
+      font-size: 17px;
+    }
+
+    &__descr {
+      font-size: 17px;
+    }
+  }
+
+  .project-show {
+    &__title {
+      font-size: 33px;
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+.project-info {
+  &__content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+}
+
+.project-slider {
+
+  &__list {
+  grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__tab {
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+  }
+}
+
+.tab-content {
+  height: 300px;
+}
+
+.tab-content .swiper {
+  padding: 0 ;
+}
+
+.tab-content .swiper-button-prev, .swiper-button-next {
+display: none;
+}
+
+.project-show {
+  padding: 50px 0;
+
+  &__content {
+    height: 150px;
+  }
+}
+
+.project-show__content .swiper-button-prev, .swiper-button-next {
+  display: none;
+}
+}
